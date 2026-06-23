@@ -38,7 +38,7 @@ function StepList({ step }) {
   return (
     <div className="numbers">
       {messages.map((_, index) => {
-        return <StepNumbers step={step} index={index} />;
+        return <StepNumbers key={index} step={step} index={index} />;
       })}
     </div>
   );
